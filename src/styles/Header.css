@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration: none;
+    color: #FF6060;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    text-decoration-line: underline;
+    color: #FF6060;
+}
+
+li:first-of-type {
+    margin-right: 60px;
+}
