@@ -14,6 +14,7 @@ function Thumbnails() {
             {locationsArray.map((location) => (
                 <div key={location.id} className='card'>
                     <img src={location.cover}/>
+                    <div className='gradient'></div>
                     <h3>{location.title}</h3>
                 </div>
             ))}
