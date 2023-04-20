@@ -1,14 +1,24 @@
 import logements from '../assets/logements.json';
+import '../styles/Thumbnails.css';
 
 function Thumbnails() {
+    let locationsArray = [];
+
     for(let i=0; i < logements.length; i++){
-        return(
-            <aside>
-                <img src={logements[i].cover}/>
-                <h3>{logements[i].title}</h3>
-            </aside>
-        );
+        const locations = logements[i];
+        locationsArray.push(locations);
     }
+
+    return(
+        <div className='wrapper'>
+            {locationsArray.map((location) => (
+                <div key={location.id} className='card'>
+                    <img src={location.cover}/>
+                    <h3>{location.title}</h3>
+                </div>
+            ))}
+        </div>
+    );
 }
 
 export default Thumbnails;
