@@ -1,0 +1,36 @@
+.topper-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.topper-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+.topper-container h1 {
+    position: relative;
+    bottom: 80%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+}
