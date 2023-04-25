@@ -1,18 +1,24 @@
-import logements from '../assets/logements.json';
+import React, { useEffect, useState } from 'react';
 import '../styles/Thumbnails.css';
 import {Link} from 'react-router-dom';
 
 function Thumbnails() {
-    let locationsArray = [];
+    const [locations, setLocations] = useState([]);
 
-    for(let i=0; i < logements.length; i++){
-        const locations = logements[i];
-        locationsArray.push(locations);
-    }
+    useEffect( () => {
+        fetch('/data/logements.json')
+        .then(res => res.json())
+        .then(data => {
+            setLocations(data);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    },[]);
 
     return(
         <div className='wrapper'>
-            {locationsArray.map((location) => (
+            {locations.map((location) => (
                 <Link to={`/housing-info/${location.id}`}>
                     <div key={location.id} className='card'>
                         <img src={location.cover}/>
