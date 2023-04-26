@@ -32,7 +32,9 @@ const HousingInfo = () => {
             return(
                 <React.StrictMode>
                     <Header />
-                    <Caroussel location={locationSelected} />
+                    <div className='carousselContainer'>
+                        <Caroussel location={locationSelected} slides={locationSelected.pictures} />
+                    </div>
                 </React.StrictMode>
             );
         }

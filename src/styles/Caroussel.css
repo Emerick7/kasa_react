@@ -1,0 +1,18 @@
+.gallery {
+    height: 100%;
+    position: relative;
+}
+
+.current-slide {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    z-index: 1;
+}
