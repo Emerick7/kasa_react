@@ -1,0 +1,30 @@
+.housing-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+.title-location-tags-container h1 {
+    font-size: 36px;
+    line-height: 100%;
+    color: #FF6060;
+    margin: 6px 0 10px 0;
+}
+
+.title-location-tags-container h2 {
+    font-size: 18px;
+    color: #FF6060;
+    margin: 0 0 20px 0;
+}
+
+.host-rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

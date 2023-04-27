@@ -1,10 +1,9 @@
 import '../styles/Caroussel.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import leftArrow from '../assets/left_arrow_gallery.svg';
 import rightArrow from '../assets/right_arrow_gallery.svg';
 
 function Caroussel(props) {
-    const location = props.location;
     const slides = props.slides;
 
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,11 +1,13 @@
 import '../styles/TAG.css';
 
-function Tag() {
-
+function Tag(props) {
+    const tags = props.tags;
 
     return(
-        <aside className='tag-container'>
-            <p>{}</p>
+        <aside className='tags-container'>
+            {tags.map((tag) => (
+                <h3>{tag}</h3>
+            ))}
         </aside>
     );
 }

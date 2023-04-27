@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/HousingInfo.css';
 import Header from '../components/Header';
 import Caroussel from '../components/Caroussel';
+import HousingHeader from '../components/HousingHeader';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const HousingInfo = () => {
@@ -33,8 +34,9 @@ const HousingInfo = () => {
                 <React.StrictMode>
                     <Header />
                     <div className='carousselContainer'>
-                        <Caroussel location={locationSelected} slides={locationSelected.pictures} />
+                        <Caroussel slides={locationSelected.pictures} />
                     </div>
+                    <HousingHeader housing={locationSelected} />
                 </React.StrictMode>
             );
         }

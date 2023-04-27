@@ -1,0 +1,11 @@
+.rating-container {
+    margin: 27px 0 0 0;
+}
+
+.rating-container img {
+    margin-right: 15px;
+}
+
+.rating-container img:last-of-type {
+    margin-right: 0;
+}
