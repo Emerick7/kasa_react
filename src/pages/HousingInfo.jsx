@@ -5,6 +5,7 @@ import Caroussel from '../components/Caroussel';
 import HousingHeader from '../components/HousingHeader';
 import { useNavigate, useParams } from 'react-router-dom';
 import HousingDetails from '../components/HousingDetails';
+import Footer from '../components/Footer';
 
 const HousingInfo = () => {
     let { housingId } = useParams();

@@ -1,5 +1,4 @@
 .dropdown-container {
-    height: 52px;
     width: 100%;
     margin-right: 76px;
 }
@@ -12,6 +11,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 52px;
     background: #FF6060;
     border-radius: 5px;
     padding: 0 20px 0 20px;
@@ -19,6 +20,11 @@
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
+}
+
+.dropdown img {
+    height: 14px;
+    width: 24px
 }
 
 .dropdown-content {
