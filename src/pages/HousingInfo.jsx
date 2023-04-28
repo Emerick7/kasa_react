@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Caroussel from '../components/Caroussel';
 import HousingHeader from '../components/HousingHeader';
 import { useNavigate, useParams } from 'react-router-dom';
+import HousingDetails from '../components/HousingDetails';
 
 const HousingInfo = () => {
     let { housingId } = useParams();
@@ -37,6 +38,7 @@ const HousingInfo = () => {
                         <Caroussel slides={locationSelected.pictures} />
                     </div>
                     <HousingHeader housing={locationSelected} />
+                    <HousingDetails housing={locationSelected} />
                 </React.StrictMode>
             );
         }
