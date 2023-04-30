@@ -10,6 +10,10 @@
     border-radius: 25px;
 }
 
+.wrapper a {
+    text-decoration: none;
+}
+
 .card {
     height: 340px;
     width: 340px;

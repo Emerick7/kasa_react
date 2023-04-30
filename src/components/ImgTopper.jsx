@@ -5,7 +5,6 @@ function ImgTopper() {
     return (
         <div className='topper-container'>
             <img src={background}/>
-            <div className='gradient'></div>
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
     )
