@@ -5,12 +5,12 @@ header {
     margin: 40px 0 63px 0;
 }
 
-ul {
+header ul {
     display: flex;
     flex-direction: row;
 }
 
-a {
+.link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -20,15 +20,15 @@ a {
     color: #FF6060;
 }
 
-li {
+header li {
     list-style-type: none;
 }
 
-li:hover {
+header li:hover {
     text-decoration-line: underline;
     color: #FF6060;
 }
 
-li:first-of-type {
+header li:first-of-type {
     margin-right: 60px;
 }

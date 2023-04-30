@@ -4,7 +4,7 @@ import './styles/index.css';
 import Home from './pages/Home.jsx';
 import HousingInfo from './pages/HousingInfo';
 import About from './pages/About';
-import Error404 from './pages/404';
+import Error from './pages/Error';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <Error404 />,
+    errorElement: <Error />,
   },
   {
     path: "housing-info/:housingId",
