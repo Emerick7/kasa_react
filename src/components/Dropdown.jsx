@@ -5,6 +5,8 @@ import upArrow from '../assets/up_arrow_dropdown.svg';
 
 function Dropdown(props) {
     const dropdownContent = props.dropdownContent;
+    const dropdownContainerStyles = props.dropdownContainerStyles;
+    const dropdownFontSize = props.dropdownFontSize;
 
     const [currentState, setCurrentState] = useState(false);
 
@@ -25,12 +27,12 @@ function Dropdown(props) {
     };
 
     return (
-        <div className='dropdown-container'>
+        <div className='dropdown-container' style={dropdownContainerStyles}>
             <div className='dropdown' onClick={openCloseDropdown}>
-                <h4>{dropdownContent.h4}</h4>
+                <h4 style={dropdownFontSize}>{dropdownContent.h4}</h4>
                 <img src={arrowDropdown}/>
             </div>
-            <article className='dropdown-content' style={articleStyles}>
+            <article className='dropdown-content' style={{...articleStyles, ...dropdownFontSize}}>
                 {dropdownContent.article.map((string) => <p>{string}</p>)}
             </article>
         </div>

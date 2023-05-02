@@ -1,11 +1,13 @@
 import '../styles/ImgTopper.css';
-import background from '../assets/background_img_topper.svg';
 
-function ImgTopper() {
+function ImgTopper(props) {
+    const background = props.background;
+    const textH1 = props.textH1;
+
     return (
         <div className='topper-container'>
             <img src={background}/>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1>{textH1}</h1>
         </div>
     )
 }
