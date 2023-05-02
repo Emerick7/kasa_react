@@ -3,3 +3,9 @@
     height: 415px;
     margin: 0 auto;
 }
+
+@media all and (max-width: 480px) {
+    .carousselContainer {
+        height: 255px;
+    }
+}

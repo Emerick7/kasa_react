@@ -9,3 +9,15 @@
 .rating-container img:last-of-type {
     margin-right: 0;
 }
+
+@media all and (max-width: 480px) {
+    .rating-container {
+        margin: 0;
+    }
+
+    .rating-container img {
+        height: 13px;
+        width: 13px;
+        margin-right: 7px;
+    }
+}

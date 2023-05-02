@@ -17,3 +17,13 @@
 .tags-container h3:last-of-type {
     margin-right: 0;
 }
+
+@media all and (max-width: 480px) {
+    .tags-container h3 {
+        font-size: 10px;
+        height: 18px;
+        width: 84px;
+        padding-bottom: 4px;
+        border-radius: 5px;
+    }
+}

@@ -9,7 +9,7 @@ function Caroussel(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     //Style CSS
-    const slideStyles = {
+    let slideStyles = {
         width: "100%",
         height: "100%",
         borderRadius: "25px",
@@ -18,7 +18,7 @@ function Caroussel(props) {
         backgroundImage: `url(${slides[currentIndex]})`
     };
 
-    const leftArrowStyles = {
+    let leftArrowStyles = {
         backgroundImage: `url(${leftArrow})`,
         height: "80px",
         width: "47px",
@@ -30,7 +30,7 @@ function Caroussel(props) {
         cursor: "pointer",
     }
 
-    const rightArrowSyles = {
+    let rightArrowSyles = {
         backgroundImage: `url(${rightArrow})`,
         height: "80px",
         width: "47px",
@@ -40,6 +40,36 @@ function Caroussel(props) {
         right: "24px",
         zIndex: 1,
         cursor: "pointer",
+    }
+
+    let mobileMediaQuery = window.matchMedia("(max-width: 480px)");
+
+    if(mobileMediaQuery.matches) {
+        leftArrowStyles = {
+            backgroundImage: `url(${leftArrow})`,
+            height: "20px",
+            width: "12px",
+            backgroundSize: "contain",
+            position: "absolute",
+            top: "50%",
+            transform: "translate(0, -50%)",
+            left: "6px",
+            zIndex: 1,
+            cursor: "pointer",
+        };
+
+        rightArrowSyles = {
+            backgroundImage: `url(${rightArrow})`,
+            height: "20px",
+            width: "12px",
+            backgroundSize: "contain",
+            position: "absolute",
+            top: "50%",
+            transform: "translate(0, -50%)",
+            right: "6px",
+            zIndex: 1,
+            cursor: "pointer",
+        };
     }
     //Fin style CSS
 

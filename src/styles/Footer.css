@@ -21,3 +21,13 @@
     line-height: 142.6%;
     color: #FFFFFF;
 }
+
+@media all and (max-width: 480px) {
+    .footer-container {
+        padding: 62px 0 62px 0;
+    }
+
+    .footer-container span {
+        font-size: 12px;
+    }
+}

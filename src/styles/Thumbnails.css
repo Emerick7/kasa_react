@@ -56,3 +56,21 @@
         top: -100px;
     }
 }
+
+@media all and (max-width: 480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background: none;
+        row-gap: 20px;
+    }
+
+    .card {
+        aspect-ratio: auto 67 / 51;
+    }
+
+    .card h3 {
+        top: 20px;
+    }
+}
