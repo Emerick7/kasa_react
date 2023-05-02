@@ -32,3 +32,28 @@ header li:hover {
 header li:first-of-type {
     margin-right: 60px;
 }
+
+@media all and (max-width: 480px) {
+    header {
+        margin: 20px 0 20px 0;
+    }
+
+    .kasa-logo {
+        height: 47px;
+        width: 145px;
+    }
+
+    .link {
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+    header li:first-of-type {
+        margin-right: 10px;
+    }
+
+    header li:hover {
+        text-decoration-line: none;
+    }
+}
