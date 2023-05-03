@@ -44,3 +44,30 @@
 .dropdown-content p {
     margin: 0;
 }
+
+@media all and (max-width: 480px) {
+    .dropdown-container {
+        margin: 0 0 20px 0;
+    }
+
+    .dropdown-container:last-of-type {
+        margin: 0;
+    }
+
+    .dropdown {
+        height: 30px;
+        padding: 0 10px 0 10px;
+        font-size: 13px;
+    }
+
+    .dropdown img {
+        height: 10px;
+        width: 16px;
+    }
+
+    .dropdown-content {
+        font-size: 12px;
+        min-height: 100px;
+        padding: 23px 10px;
+    }
+}

@@ -20,6 +20,9 @@
 @media all and (max-width: 480px) {
     .host-container p {
         font-size: 12px;
+        line-height: 142.6%;
+        width: 50px;
+        margin: 0 10px 0 0;
     }
 
     .host-container img {

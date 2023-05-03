@@ -28,3 +28,23 @@
     text-decoration-line: underline;
     color: #FF6060;
 }
+
+@media all and (max-width: 480px) {
+    .error-status {
+        font-size: 96px;
+        line-height: 100%;
+        margin: 179px 0 12px 0;
+    }
+
+    .error-desc {
+        font-size: 18px;
+        line-height: 142.6%;
+        margin-bottom: 133px;
+        text-align: center;
+    }
+
+    .home-link {
+        font-size: 14px;
+        line-height: 142.6%;
+    }
+}

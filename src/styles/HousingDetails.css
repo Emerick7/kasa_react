@@ -8,3 +8,10 @@
     font-style: normal;
     line-height: 142.6%;
 }
+
+@media all and (max-width: 480px) {
+    .details-container {
+        flex-direction: column;
+        margin: 16px 0 20px 0;
+    }
+}
