@@ -5,8 +5,8 @@ function Tag(props) {
 
     return(
         <aside className='tags-container'>
-            {tags.map((tag) => (
-                <h3>{tag}</h3>
+            {tags.map((tag, index) => (
+                <h3 key={`${tag}-${index}`}>{tag}</h3>
             ))}
         </aside>
     );

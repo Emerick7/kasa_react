@@ -50,7 +50,7 @@ function About() {
             <Header />
             <ImgTopper background={background} imgTopperStyle={imgTopperStyle} />
             <div className='dropdowns-container'>
-                {dropdownContent.map((dropdown) => <Dropdown dropdownContent={dropdown} dropdownContainerStyles={dropdownContainerStyles} dropdownFontSize={dropdownFontSize}/>)}
+                {dropdownContent.map((dropdown, index) => <Dropdown key={`${dropdown}-${index}`} dropdownContent={dropdown} dropdownContainerStyles={dropdownContainerStyles} dropdownFontSize={dropdownFontSize}/>)}
             </div>
         </React.StrictMode>
     );

@@ -19,7 +19,7 @@ function HousingDetails(props) {
 
     return (
         <div className='details-container'>
-            {dropdownContent.map((dropdown) => <Dropdown dropdownContent={dropdown}/>)}
+            {dropdownContent.map((dropdown, index) => <Dropdown key={`${dropdown}-${index}`} dropdownContent={dropdown}/>)}
         </div>
     );
 }

@@ -33,7 +33,7 @@ function Dropdown(props) {
                 <img src={arrowDropdown}/>
             </div>
             <article className='dropdown-content' style={{...articleStyles, ...dropdownFontSize}}>
-                {dropdownContent.article.map((string) => <p>{string}</p>)}
+                {dropdownContent.article.map((string, index) => <p key={`${string}-${index}`}>{string}</p>)}
             </article>
         </div>
     );

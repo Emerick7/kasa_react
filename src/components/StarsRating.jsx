@@ -9,7 +9,7 @@ function StarsRating(props) {
 
     return (
         <div className='rating-container'>
-            {range.map((star) => rating >= star ? <img src={starRed}/> : <img src={starGrey}/>)}
+            {range.map((star, index) => rating >= star ? <img key={`${star}-${index}`} src={starRed}/> : <img key={`${star}-${index}`} src={starGrey}/>)}
         </div>
     );
 }

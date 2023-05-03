@@ -19,6 +19,7 @@
 .error-desc {
     font-weight: 500;
     font-size: 36px;
+    line-height: 142.6%;
     margin-bottom: 182px;
 }
 
@@ -38,7 +39,6 @@
 
     .error-desc {
         font-size: 18px;
-        line-height: 142.6%;
         margin-bottom: 133px;
         text-align: center;
     }

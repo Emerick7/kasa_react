@@ -19,8 +19,8 @@ function Thumbnails() {
     return(
         <div className='wrapper'>
             {locations.map((location) => (
-                <Link to={`/housing-info/${location.id}`}>
-                    <div key={location.id} className='card'>
+                <Link to={`/housing-info/${location.id}`} key={location.id}>
+                    <div className='card'>
                         <img src={location.cover}/>
                         <div className='gradient'></div>
                         <h3>{location.title}</h3>
