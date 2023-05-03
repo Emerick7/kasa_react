@@ -72,6 +72,13 @@ function Caroussel(props) {
         };
     }
     //Fin style CSS
+    let currentSlideStyle;
+
+    if(slides.length < 2) {
+        leftArrowStyles = {display: "none"};
+        rightArrowSyles = {display: "none"};
+        currentSlideStyle = {display: "none"};
+    }
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
@@ -90,7 +97,7 @@ function Caroussel(props) {
             <div style={leftArrowStyles} onClick={goToPrevious}></div>
             <div style={rightArrowSyles} onClick={goToNext}></div>
             <div style={slideStyles}></div>
-            <p className='current-slide'>{currentIndex + 1}/{slides.length}</p>
+            <p className='current-slide' style={currentSlideStyle}>{currentIndex + 1}/{slides.length}</p>
         </div>
     );
 }
