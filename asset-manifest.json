@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kasa_react/static/css/main.61284107.css",
+    "main.js": "/kasa_react/static/js/main.84d85ab0.js",
+    "static/media/background_img_topper_about.svg": "/kasa_react/static/media/background_img_topper_about.48cf6a97c52df4c0365dfadc4cf00c05.svg",
+    "static/media/background_img_topper.svg": "/kasa_react/static/media/background_img_topper.7dcf072dae3b6484ba080e9948683755.svg",
+    "static/media/LOGO.svg": "/kasa_react/static/media/LOGO.759702e80d2cca5e6d54b41ca6682c02.svg",
+    "static/media/LOGO_white.svg": "/kasa_react/static/media/LOGO_white.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/kasa_react/index.html",
+    "static/media/starGrey.svg": "/kasa_react/static/media/starGrey.babab5c262f8dc3d4fe8e304c81ccfbe.svg",
+    "static/media/starRed.svg": "/kasa_react/static/media/starRed.d8fa0733fdcb168b4b84b020e7a5e8dc.svg",
+    "static/media/down_arrow_dropdown.svg": "/kasa_react/static/media/down_arrow_dropdown.5d44eb42ad759b5d22b462434e12735c.svg",
+    "static/media/up_arrow_dropdown.svg": "/kasa_react/static/media/up_arrow_dropdown.baa99362d5d6afa06d8416324bd68280.svg",
+    "static/media/right_arrow_gallery.svg": "/kasa_react/static/media/right_arrow_gallery.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/left_arrow_gallery.svg": "/kasa_react/static/media/left_arrow_gallery.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.61284107.css.map": "/kasa_react/static/css/main.61284107.css.map",
+    "main.84d85ab0.js.map": "/kasa_react/static/js/main.84d85ab0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61284107.css",
+    "static/js/main.84d85ab0.js"
+  ]
+}
